@@ -8,12 +8,15 @@
 class Point_3D : public TObject{
     public:
         Point_3D();
-        Point_3D(Int_t x, Int_t y, Int_t z);
+        Point_3D(Double_t px, Double_t py, Double_t pz);
         virtual ~Point_3D();
     private:
-        Int_t xPos;
-        Int_t yPos;
-        Int_t zPos;
+        Double_t px;
+        Double_t py;
+        Double_t pz;
+        Double_t magP;
+        Double_t CalculateMagP(Double_t px, Double_t py, Double_t pz);
+
     ClassDef(Point_3D, 1)    
 };
 

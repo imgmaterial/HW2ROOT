@@ -11,7 +11,7 @@ Went with creating a 3D point object.
 
 ### 3
 
-Deriving from an existing TObject class allows to inherit ROOT methods.
+Deriving from an existing TObject class allows to inherit ROOT methods. All objects that would be written should derive from the TObject class.
 
 ### 4
 rootlogon.C loads macro on root launch.
