@@ -21,6 +21,18 @@ Double_t Point_3D::CalculateMagP(Double_t x, Double_t y, Double_t z){
     return magnitude;
 }
 
+Double_t Point_3D::GetX(){
+    return this->px;
+}
+
+Double_t Point_3D::GetY(){
+    return this->py;
+}
+
+Double_t Point_3D::GetZ(){
+    return this->pz;
+}
+
 Point_3D::~Point_3D(){
 
 }

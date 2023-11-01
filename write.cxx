@@ -11,7 +11,7 @@ void write(){
     Double_t px, py, pz;
     Double_t magP;
 
-    for (Int_t i = 0; i<50;i++){
+    for (Int_t i = 0; i<100000;i++){
         px = gRandom->Gaus(0,.02);
         py = gRandom->Gaus(0,.02);
         pz = gRandom->Gaus(0,.02);

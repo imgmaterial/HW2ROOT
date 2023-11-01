@@ -10,6 +10,9 @@ class Point_3D : public TObject{
         Point_3D();
         Point_3D(Double_t px, Double_t py, Double_t pz);
         virtual ~Point_3D();
+        Double_t GetX();
+        Double_t GetY();
+        Double_t GetZ();
     private:
         Double_t px;
         Double_t py;
