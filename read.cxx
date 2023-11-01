@@ -17,5 +17,8 @@ void read(){
         tree->GetEntry(i);
         h2->Fill(point_3D->GetX(), point_3D->GetY());
     }
+    TCanvas *c1=new TCanvas();
     h2->Draw();
+    TCanvas *c2=new TCanvas();
+    tree->Draw("px*py : pz >> h(500,-0.1,0.1,500,-0.01,0.01)", "magP >0.01", "colz");
 }
